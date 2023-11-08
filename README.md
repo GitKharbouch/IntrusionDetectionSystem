@@ -13,4 +13,6 @@ This notebook contains the data exploration and visualization. The data explorat
 3. Adding column headers and explaining the features
 4. Data statistics
 5. Data visualization
+6. Data preprocessing (Scaling, Encoding, Dimensionality reduction, Splitting)
+
 
