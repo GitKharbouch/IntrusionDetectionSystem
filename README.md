@@ -15,4 +15,18 @@ This notebook contains the data exploration and visualization. The data explorat
 5. Data visualization
 6. Data preprocessing (Scaling, Encoding, Dimensionality reduction, Splitting)
 
+## ML_IDS.ipynb
+This notebook contains the machine learning models used for the IDS. The models used are:
+* *logistic regression*
+* *decision tree*
+* *random forest*
+* *linear support vector machine*
+* *naive bayes*
+* *K-nearest neighbors*
 
+## MultiClass_CNN_IDS.ipynb
+This notebook contains the CNN model used for the IDS. In this approach we classified the attack labels as four main types, and tackled this as a multiclass classification problem. The four main types are:
+* *DOS*
+* *U2R*
+* *R2L*
+* *PROBE*
