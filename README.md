@@ -5,6 +5,34 @@ We will explore the possibility of creating a robust IDS using the NSL-KDD datas
 
 ## Repository content
 
+## File Structure
+
+IntrusionDetectionSystem/
+|-- data/
+    |-- "All necessary data files including csv files, pcap files and txt files."
+|-- docker/
+    |-- Microservices "Contains all the microservices consisting of scripts and Dockerfiles."
+        |-- Anomaly_detector/ "This microservice is used to detect the anomalies in the data."
+        |-- Data/ "This the docker volume shared between the microservices."
+        |-- File_retriever/ "This microservice is used to retrieve the files from the docker volume."
+        |-- Preprocessor/ "This microservice is used to preprocess the data."
+        .dockerignore
+    docker-compose.yaml
+|-- models/
+    |-- "All the saved models used for the IDS."
+|-- notebooks/
+    |-- data_exploration.ipynb
+    |-- ML_ids.ipynb
+    |-- Multiclass_cnn_ids.ipynb
+    |-- wireshark_local_preprocessing.ipynb
+|-- nsl-kdd/
+    |-- "The NSL-KDD dataset."
+|-- scripts/
+    |-- config.json "Contains the configuration for the IDS."
+    |-- preprocess_packets.py "This script is used to preprocess the packets."
+|-- wireshark_live_captures/
+    |-- "Contains the captures from wireshark using the live capture feature."
+
 ## Dataset (nsl-kdd folder)
 
 The dataset used for this project is the NSL-KDD dataset. It is a modified version of the KDDCup99 dataset. The NSL-KDD dataset has 41 features and 23 classes. The dataset is available at https://www.unb.ca/cic/datasets/nsl.html
