@@ -6,8 +6,9 @@ We will explore the possibility of creating a robust IDS using the NSL-KDD datas
 ## Repository content
 
 ## File Structure
-
-IntrusionDetectionSystem/
+let's take a look at the file structure of the repository:
+```bash
+IntrusionDetectionSystem/ 
 |-- data/
     |-- "All necessary data files including csv files, pcap files and txt files."
 |-- docker/
@@ -32,7 +33,7 @@ IntrusionDetectionSystem/
     |-- preprocess_packets.py "This script is used to preprocess the packets."
 |-- wireshark_live_captures/
     |-- "Contains the captures from wireshark using the live capture feature."
-
+```
 ## Dataset (nsl-kdd folder)
 
 The dataset used for this project is the NSL-KDD dataset. It is a modified version of the KDDCup99 dataset. The NSL-KDD dataset has 41 features and 23 classes. The dataset is available at https://www.unb.ca/cic/datasets/nsl.html
