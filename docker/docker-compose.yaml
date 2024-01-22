@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  file_retriever:
+    build:
+      context: ./Microservices/File_retriever
+    volumes:
+      - ./Microservices/Data:/app/data
+    depends_on:
+      - preprocessor
+
+  preprocessor:
+    build:
+      context: ./Microservices/Preprocessor
+    volumes:
+      - ./Microservices/Data:/app/data
+    depends_on:
+      - anomaly_detector
+
+  anomaly_detector:
+    build:
+      context: ./Microservices/Anomaly_detector
+    volumes:
+      - ./Microservices/Data:/app/data
+

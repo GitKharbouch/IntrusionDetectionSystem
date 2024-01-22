@@ -1,9 +1,12 @@
 # IntrusionDetectionSystem
-We will explore the possibility of creating a robust IDS using the NSL-KDD dataset
+
+## Description
+We will explore the possibility of creating a robust IDS using the NSL-KDD dataset, in this repository we will explore the dataset, visualize it, and use machine learning models to classify the attacks. We will also use a CNN model to classify the attacks as four main types. Then we will compare the results of the different models and choose the best one. And finally group everything as docker microservices.
 
 ## Repository content
 
-## Dataset
+## Dataset (nsl-kdd folder)
+
 The dataset used for this project is the NSL-KDD dataset. It is a modified version of the KDDCup99 dataset. The NSL-KDD dataset has 41 features and 23 classes. The dataset is available at https://www.unb.ca/cic/datasets/nsl.html
 
 ## Data_Exploration.ipynb

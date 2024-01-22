@@ -1,0 +1,13 @@
+import tensorflow as tf
+
+# Load the model
+model = tf.keras.models.load_model('CNN_NSL-KDD.h5')
+
+# Convert the model to TensorFlow Lite format
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+# Save the TensorFlow Lite model to a file
+tflite_model_path = 'CNN_NSL-KDD.tflite'
+with open(tflite_model_path, 'wb') as f:
+    f.write(tflite_model)
